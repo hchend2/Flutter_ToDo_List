@@ -45,7 +45,7 @@ class _LoginState extends State<Login> {
                     boxShadow: const [
                       BoxShadow(
                         // blurRadius: 6,
-                        spreadRadius: 2,
+                        spreadRadius: 1,
                         // offset: Offset(1, 1),
                         // color: Colors.grey.withOpacity(0.3)
                       )
@@ -84,7 +84,7 @@ class _LoginState extends State<Login> {
                     boxShadow: const [
                       BoxShadow(
                         // blurRadius: 6,
-                        spreadRadius: 2,
+                        spreadRadius: 1,
                         // offset: Offset(0.5, 0.5),
                         // color: Colors.grey.withOpacity(0.2)
                       )
@@ -141,12 +141,12 @@ class _LoginState extends State<Login> {
           Container(
             width: w*0.5,
             height: h*0.08,
-            padding: const EdgeInsets.fromLTRB(15, 5, 15, 5),
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: FilledButton(
               child: const Text("Login",
               style: TextStyle(
                 color: Colors.yellow,
-                fontSize: 20,
+                fontSize: 30,
                 fontWeight: FontWeight.bold
               ),
               ),
