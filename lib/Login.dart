@@ -8,7 +8,11 @@ class Login extends StatefulWidget {
   State<Login> createState() => _LoginState();
 }
 
+
+enum LoginStatus {notSignIn, signIn}
+
 class _LoginState extends State<Login> {
+  
   @override
   Widget build(BuildContext context) {
 

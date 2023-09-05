@@ -15,16 +15,8 @@ class SignUp extends StatelessWidget {
           Container(
             alignment: Alignment.center,
             padding: const EdgeInsets.all(10),
-            // child: const Text(
-            //   "Plan It Out",
-            //   style: TextStyle(
-            //
-            //       color: Colors.blue,
-            //       fontWeight: FontWeight.bold,
-            //       fontSize: 50),
-            // )
           ),
-          SizedBox(height: 70,),
+          const SizedBox(height: 70,),
           Container(
             margin: const EdgeInsets.only(left: 20, right: 20),
             width: w,
@@ -122,7 +114,7 @@ class SignUp extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(25),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           // blurRadius: 6,
                           spreadRadius: 1,
@@ -161,7 +153,7 @@ class SignUp extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(25),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           spreadRadius: 1,
                         )
@@ -243,31 +235,3 @@ class SignUp extends StatelessWidget {
     );
   }
 }
-// Widget makeInput({label,obsureText = false}){
-//   return Column(
-//     crossAxisAlignment: CrossAxisAlignment.start,
-//     children: [
-//       Text(label,style:const TextStyle(
-//           fontSize: 15,
-//           fontWeight: FontWeight.w400,
-//           color: Colors.black87
-//       ),),
-//       const SizedBox(height: 5,),
-//       TextField(
-//         obscureText: obsureText,
-//         decoration: const InputDecoration(
-//           contentPadding: EdgeInsets.symmetric(vertical: 0,horizontal: 10),
-//           enabledBorder: OutlineInputBorder(
-//             borderSide: BorderSide(
-//               // color: Colors.grey[400],
-//             ),
-//           ),
-//           border: OutlineInputBorder(
-//             // borderSide: BorderSide(color: Colors.grey[400])
-//           ),
-//         ),
-//       ),
-//       const SizedBox(height: 30,)
-//     ],
-//   );
-// }
