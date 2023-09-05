@@ -12,7 +12,18 @@ class Login extends StatefulWidget {
 enum LoginStatus {notSignIn, signIn}
 
 class _LoginState extends State<Login> {
-  
+
+  LoginStatus _loginStatus = LoginStatus.notSignIn;
+  late BuildContext _context;
+  bool _isLoading = false;
+  final formkey = new GlobalKey<FormState>();
+  final scaffoldkey = new GlobalKey<ScaffoldState>();
+
+  late String userName;
+  late String password;
+
+  // LoginResponse response;
+
   @override
   Widget build(BuildContext context) {
 
